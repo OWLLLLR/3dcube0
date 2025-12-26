@@ -1,0 +1,119 @@
+* {
+
+    margin: 0;
+    /*ВНЕШНИЙ ОТСТУП*/
+    padding: 0;
+    /* ВНУТРЕННИЙ ОТС*/
+    box-sizing: border-box;
+    /*СПОСОБ РАЗМЕЩЕНИЯ*/
+    font-size: 33px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom left, #be7e17, #36009b);
+}
+
+.cube {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+
+}
+
+.cube .big span {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: var(--clr);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(299px);
+}
+
+.cube div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg);
+    animation: anim_cube 30s linear infinite;
+}
+
+@keyframes anim_cube{
+    0%{
+     transform: rotateX(-20deg) rotateY(360deg);
+    }
+    100%{
+       transform: rotateX(-20deg) rotateY(0deg);
+    }
+
+}
+
+ .cube .big span.top{
+      transform: rotateX(90deg) translateZ(299px);
+}
+
+
+.cube .big span.botom{
+      transform: rotateX(90deg) translateZ(-299px);
+}
+
+
+
+
+
+
+.cube .big span{
+background: transparent;
+border: 20px solid #ffa20d;
+box-shadow: 0 0 100px #a06f00
+
+}
+
+p{
+  position: absolute;
+    top: 50%;
+ left: 12%  ;
+    color: deeppink;
+    font-size: 200%;
+    text-shadow: 0 0 40px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
